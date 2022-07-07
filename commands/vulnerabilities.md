@@ -33,7 +33,7 @@ sqlmap -r post.txt -p parameter
 
 ## XSS
 ```shell
-wfuzz -z file,/usr/share/seclists/Fuzzing/XSS/ --hh 0 $URL/specials?menu=FUZZ
+wfuzz -c -z file,/usr/share/seclists/Fuzzing/XSS/XSS-Jhaddix.txt --hh 0 "$URL/specials?menu=FUZZ"
 ```
 
 ## Brute forcing 
