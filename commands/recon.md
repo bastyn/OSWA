@@ -1,6 +1,6 @@
 # Recon
 
-## Setting target variables
+## Set target variables
 ```shell
 export URL="http://target:80"
 ```
