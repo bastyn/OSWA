@@ -1,9 +1,17 @@
 # Recon
 
 ## Setting target variables
+```shell
 export URL="http://target:80"
+```
+
+```shell
 export IP="10.10.0.1"
+```
+
+```shell
 export SESSION="token"
+```
 
 ## Nmap
 ```shell
