@@ -16,7 +16,7 @@ proof.txt flag:
 
 
 
-# RECON
+# Recon
 
 ## Nmap
 
@@ -35,4 +35,4 @@ proof.txt flag:
 #### Directories / (Web root)
 
 
-# OTHER
+# Other
