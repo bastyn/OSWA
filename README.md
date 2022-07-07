@@ -7,7 +7,7 @@ Tools to install on fresh Kali VM:
 - [SecLists](https://github.com/danielmiessler/SecLists) 
 	- *Install*: `sudo apt-get install seclists`
 	- *Path*: `/usr/share/seclists/`
-- [Payloadallthethings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+- [Payload All The Things](https://github.com/swisskyrepo/PayloadsAllTheThings)
 	- *Install*: `sudo apt-get install payloadsallthethings`
 	- *Path*: `/usr/share/payloadallthethings/`
 - gobuster
