@@ -59,7 +59,7 @@ wfuzz -c -z file,/usr/share/wordlists/Fuzzing/yeah.txt "$URL/FUZZ"
 
 ### Endpoint discovery
 ```shell
-gobuster dir -u $URL -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u $URL -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt
 ```
 
 ### Subdomain discovery
