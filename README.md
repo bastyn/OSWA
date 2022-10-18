@@ -5,7 +5,6 @@ Full write-up about the OSWA exam: https://bastijnouwendijk.com/my-oswa-certific
 
 ## Tools
 Tools to install on fresh Kali VM:
-
 - [SecLists](https://github.com/danielmiessler/SecLists) 
 	- *Install*: `sudo apt-get install seclists`
 	- *Path*: `/usr/share/seclists/`
