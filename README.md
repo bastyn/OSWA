@@ -1,7 +1,7 @@
 # OSWA
 A collection of useful commands, scripts and resources for the OSWA (WEB-200) exam of Offensive Security.
 
-Full write-up about the OSWA exam: https://bastijnouwendijk.com/my-oswa-certification-journey
+[Full write-up about the OSWA exam](https://bastijnouwendijk.com/my-oswa-certification-journey)
 
 ## Tools
 Tools to install on fresh Kali VM:
